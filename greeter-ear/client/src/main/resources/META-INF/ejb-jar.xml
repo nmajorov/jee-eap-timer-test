@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar version="3.1">
+    <!--<enterprise-beans>
+        <session>
+            <ejb-name>MyTimer</ejb-name>
+
+            <security-identity>
+                <run-as>
+                    <role-name>sabemut</role-name>
+                </run-as>
+            </security-identity>
+        </session>
+    </enterprise-beans>-->
+</ejb-jar>

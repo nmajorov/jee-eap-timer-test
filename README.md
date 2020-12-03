@@ -93,7 +93,7 @@ and finally run commited image with script:
 
         run_commited_image.sh
 
-you should see messages is coming and deployment are fine..
+you should see messages is coming and deployments are fine..
 
 
 

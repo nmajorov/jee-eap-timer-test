@@ -1,7 +1,8 @@
-# jee interval timer all in one ear
+# jee interval timer  ear
+simple jee timer as ear deployment
 
-simple jee timer all in one ear deployment
+it has dependency on greeter-ear project.
 
-Originally developed for RedHat EAP 7.0 but still working in EAP 7.3
+First build greeter-ear project and deploy
 
-
+Originally developed for RedHat EAP 7.0.x but still working in EAP 7.3

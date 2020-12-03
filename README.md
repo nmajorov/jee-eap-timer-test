@@ -1,4 +1,4 @@
-#  Test with wildfly/eap dependencies deployment  problems 
+#  Test with wildfly/eap dependencies deployment  problems
 
 
 
@@ -44,7 +44,7 @@ ejbtimer ear has dependency on greeter.ear so greeter.ear has to be deployed fir
 
 
 
-**important** to deploy first greeter.ear 
+**important** to deploy first greeter.ear
 
 after deployment success you can see in server logs each 6 sec a message:
 
@@ -76,24 +76,25 @@ find and comment out a "configure_server" directive:
 
             22 function runServer() {
                 23   local instanceDir=$1
-                24 
+                24
                 25   # exposed by wildfly-cekit-modules
                 26  # configure_server
-                27 
+                27
                 28   log_info "Running $JBOSS_IMAGE_NAME image, version $JBOSS_IMAGE_VERSION"
 
 
-run commit image with command:
+then  commit image with command:
 
-        run_commited_image.sh
+        commit_image.sh
 
 
-run commited image with script:
+and finally run commited image with script:
 
 
         run_commited_image.sh
 
 you should see messages is coming and deployment are fine..
+
 
 
 **notice** after commited images is started you may see message:
@@ -106,4 +107,4 @@ you should see messages is coming and deployment are fine..
                     at java.base/sun.nio.fs.UnixFileSystemProvider.move(UnixFileSystemProvider.java:267)
 
 
-it's ok  container is started just can't do some renaming to due immutability... 
+it's ok  container is started just can't do some renaming to due immutability...

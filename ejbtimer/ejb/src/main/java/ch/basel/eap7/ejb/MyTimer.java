@@ -7,6 +7,7 @@ import ch.geneva.eap7.ejb.Greeter;
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
 import javax.ejb.*;
+import javax.inject.Inject;
 
 @Singleton
 @LocalBean
@@ -20,7 +21,7 @@ public class MyTimer {
   @Resource
   TimerService timerService;
 
-  @EJB(lookup = "ejb:greeter/ejb/GreeterEJB!ch.geneva.eap7.ejb.Greeter")
+  @Inject
   Greeter bean;
 
   
